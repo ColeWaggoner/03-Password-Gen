@@ -1,3 +1,11 @@
+var special;
+var numbers;
+var upLetters;
+var lowLetters;
+var length;
+
+
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
