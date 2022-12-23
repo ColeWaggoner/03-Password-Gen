@@ -61,6 +61,29 @@ function rulesPassword() {
     var possibleChar = [];
 
     var guarChar = [];
+
+    
+
+    if(special){
+      possibleChar.push(...specChar)
+      guarChar.push(specChar[Math.floor(Math.random() * specChar.length)])
+    }
+  
+    if(numbers){
+      possibleChar.push(...integers)
+      guarChar.push(integers[Math.floor(Math.random() * integers.length)])
+    }
+  
+    if(upLetters){
+      possibleChar.push(...uppercase)
+      guarChar.push(uppercase[Math.floor(Math.random() * uppercase.length)])
+    }
+  
+    if(lowLetters){
+      possibleChar.push(...lowercase)
+      guarChar.push(lowercase[Math.floor(Math.random() * lowercase.length)])
+    }
+  
   }  
 
 // Assignment Code
