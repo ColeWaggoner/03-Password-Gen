@@ -39,7 +39,8 @@ function rulesPassword() {
 
 
 
-  function generatePassword(){ 
+  function generatePassword(){
+    rulesPassword(); 
   
     var specChar = [
       '!', '@', '#', '$', '%', '&', '/', '?'
@@ -56,6 +57,10 @@ function rulesPassword() {
     var lowercase = [
       'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'
     ];
+
+    var possibleChar = [];
+
+    var guarChar = [];
   }  
 
 // Assignment Code
