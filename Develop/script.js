@@ -62,7 +62,7 @@ function rulesPassword() {
 
     var guarChar = [];
 
-    
+
 
     if(special){
       possibleChar.push(...specChar)
@@ -83,7 +83,13 @@ function rulesPassword() {
       possibleChar.push(...lowercase)
       guarChar.push(lowercase[Math.floor(Math.random() * lowercase.length)])
     }
+
+    for(let i = guarChar.length; i < length; i++){
+      guarChar.push(possibleChar[Math.floor(Math.random() * possibleChar.length)]);
+    }
   
+    var finalPassword = guarChar.join('');
+    return finalPassword;
   }  
 
 // Assignment Code
