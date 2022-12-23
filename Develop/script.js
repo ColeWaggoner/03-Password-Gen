@@ -17,7 +17,25 @@ function rulesPassword() {
     alert('Please enter a number between 8 and 128');
     rulesPassword();
   }
-}
+
+  else {
+
+    special = confirm('OK to confirm special Characters.');
+  
+    numbers = confirm('OK to confirm numbers.');
+  
+    upLetters = confirm('OK to confirm uppercase letters.');
+  
+    lowLetters = confirm('OK to confirm lowercase letters.');
+  
+    if(special == false && numbers == false && upLetters == false && lowLetters == false) {
+      alert('Password must have at least one criteria. \nPlease try again.');  
+      rulesPassword();
+    }
+    }
+  
+    return length, special, numbers, upLetters, lowLetters;
+  };
 
 
 
